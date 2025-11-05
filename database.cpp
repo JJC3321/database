@@ -15,7 +15,7 @@ Database :: ~Database(){
 void Database :: write(){
    
     std :: ofstream outPutFile; 
-    outPutFile.open("data/data.frm");
+    outPutFile.open("../data/data.frm");
     
     
     if(!outPutFile.is_open()) { 
