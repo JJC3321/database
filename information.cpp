@@ -1,5 +1,5 @@
 //------------- Infomation Implementation -------------// 
-#include "infomation.h"
+#include "information.h"
 #include <iostream>
 
 using std::cout;

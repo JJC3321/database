@@ -1,7 +1,7 @@
 //------------- Database -------------// 
 
 #include <iostream>
-#include "infomation.h"
+#include "information.h"
 #include <fstream>
 #include <vector>
 
