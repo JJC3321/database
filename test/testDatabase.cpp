@@ -1,39 +1,28 @@
 //------------- Test case for Database-------------// 
 
-#include <iostream>
-#include "database.h"
+#include "../database.h"
 
-using std :: cout;
-using std :: endl; 
-
-int main(){
-    
-    cout << endl;
-    cout << "Testing the Database class." << endl << endl; 
-
+int main() {
     Database db;
-
-    cout << "Adding elements to the database..." << endl;
+    
+    // Add the existing data
     db.addInformation("Bobby", "Wu", 56, "bobbyW56@gmail.com");
     db.addInformation("Wiley", "Moore", 35, "wileyM35@gmail.com");
     db.addInformation("John", "Bauer", 65, "JohnB65@gmail.com");
-    cout << endl;
     
-    db.displayAll();
-    
-    cout << "Fetching 'Wiley':" << endl;
-    information& wiley = db.getinformation("Moore");
-    wiley.display();
-    cout << endl;
-    
-    cout << "Trying to fetch non-existent element:" << endl;
-    db.getinformation("Smith");
-    cout << endl;
-    
-    cout << "Writing database to file..." << endl;
+    // Write in new table format
+    std::cout << "Writing data in table format..." << std::endl;
     db.write();
-    cout << "Database written to data.frm successfully!" << endl;
+    std::cout << "Done! Check data/data.frm to see the table format." << std::endl;
+    
+    // Test reading it back
+    Database db2;
+    std::cout << "\nReading data back from table format..." << std::endl;
+    db2.read();
+    
+    // Display all to verify
+    std::cout << "\nVerifying data was read correctly:" << std::endl;
+    db2.displayAll();
     
     return 0;
 }
-

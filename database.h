@@ -21,7 +21,8 @@ class Database{
         information& addInformation(string firstName, string lastName, int age,  string email);
         information& getinformation(string lastName);
         void displayAll(); 
-        void write(); 
+        void write();
+        void read(); 
 
         
     private:

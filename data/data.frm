@@ -1,16 +1,4 @@
-3
-1
-Bobby
-Wu
-56
-bobbyW56@gmail.com
-2
-Wiley
-Moore
-35
-wileyM35@gmail.com
-3
-John
-Bauer
-65
-JohnB65@gmail.com
+ID   FirstName    LastName     Age  Email                    
+1    Bobby        Wu           56   bobbyW56@gmail.com       
+2    Wiley        Moore        35   wileyM35@gmail.com       
+3    John         Bauer        65   JohnB65@gmail.com        
