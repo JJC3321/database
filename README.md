@@ -112,5 +112,5 @@ cl /EHsc /Fetest\testDatabase.exe test\testDatabase.cpp database.cpp infomation.
 
 ## License
 
-This project is under the MIT License. See [LICENSE](LICENSE) for more information.
+This project is under the MIT License. See [LICENSE](https://github.com/JJC3321/Database-Engine?tab=MIT-1-ov-file) for more information.
 
